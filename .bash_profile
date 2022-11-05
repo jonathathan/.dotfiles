@@ -61,8 +61,7 @@ function jpd {
         then
             conda deactivate
         fi
-        module purge
-        . fair_activate.sh
+        conda activate $ENV_NAME
     fi
 }
 
